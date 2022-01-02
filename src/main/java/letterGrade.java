@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class letterGrade {
-    public static void main(String[] args) {
+    public void main(String[] args) {
         int score;
         System.out.print("Enter the score = ");
         try {
@@ -19,7 +19,7 @@ public class letterGrade {
         }
     }
 
-    public static char getScoreLetter(int score) {
+    public char getScoreLetter(int score) {
         char grade;
         if (score < 0 || score > 100) {
             grade = 'X';
